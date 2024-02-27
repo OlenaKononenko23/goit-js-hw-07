@@ -68,6 +68,7 @@ height: 648px;
 display: flex;
 flex-wrap: wrap;
 gap: 48px 24px;
+padding: 0;
 }
 
 /* №3 */
@@ -115,6 +116,7 @@ height: 40px;
 
 .login-form button{
 border-radius: 8px;
+border-style: none;
 padding: 8px 16px;
 width: 86px;
 height: 40px;
@@ -142,6 +144,7 @@ color: #2e2f42;
 
 .change-color{
 border-radius: 8px;
+border-style: none;
 padding: 8px 16px;
 width: 148px;
 height: 40px;
