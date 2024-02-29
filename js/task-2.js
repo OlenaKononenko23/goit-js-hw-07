@@ -30,16 +30,9 @@ const images = [
 
 const galleryContainer = document.querySelector('.gallery');
 
-images.forEach((image) => {
-  const listItem = document.createElement('li');
-  const img = document.createElement('img');
-  img.src = image.url;
-  img.alt = image.alt;
-  listItem.appendChild(img);
-  galleryContainer.appendChild(listItem);
-  img.style.width = "360px";
-  img.style.height = "300px";
-  galleryContainer.style.width = "1128px";
-});
+const imagesHTML = images
+  .map((image) => `<li><img src="${image.url}" alt="${image.alt}" style="width: 360px; height: 300px;"></li>`)
+  .join('');
 
+galleryContainer.insertAdjacentHTML('beforeend', imagesHTML);
 
